@@ -28,7 +28,7 @@ const Dropdown = ({
       <select
         name="cars"
         id={id || randomId}
-        className="p-4 text-xs/xs-regular"
+        className="sm:pl-4 py-4 text-xs/xs-regular border-r-[16px] border-[transparent]"
         {...rest}
       >
         {deselectOption && (

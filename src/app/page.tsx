@@ -67,7 +67,7 @@ export default function Home() {
             onButtonClick={(game: Game) => {
               dispatch(modifyCart(game));
             }}
-            isOnCart={cart.ids.includes(g.id)}
+            isOnCart={cart.ids?.includes(g.id)}
           />
         ))}
       </div>

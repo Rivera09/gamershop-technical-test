@@ -15,6 +15,8 @@ export async function GET(request: Request) {
     );
   }
 
+  const totalPages = Math.ceil(games.length / ITEMS_PER_PAGE);
+
   if (page < 1 || isNaN(page)) page = 1;
 
   // Mock a delay to simulate a real API
@@ -24,7 +26,6 @@ export async function GET(request: Request) {
   const toIndex = page * ITEMS_PER_PAGE;
   games = games.slice(fromIndex, toIndex);
 
-  const totalPages = Math.ceil(allGames.length / ITEMS_PER_PAGE);
   const currentPage = page;
 
   return Response.json({ games, availableFilters, totalPages, currentPage });

@@ -41,9 +41,7 @@ const CartCard = ({
             {game.description}
           </p>
         )}
-        <p className="text-end text-xs/xs-bold text-neutral-500">
-          ${game.price}
-        </p>
+        <p className="text-end text-xs/xs-bold">${game.price}</p>
       </div>
     </div>
   );

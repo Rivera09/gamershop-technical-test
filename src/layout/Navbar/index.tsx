@@ -6,7 +6,9 @@ const Navbar = () => {
   return (
     <div className="px-6 py-5 bg-surface-secondary ">
       <div className="container flex justify-between">
-        <Link href="/">GamerShop</Link>
+        <Link href="/" className="text-fill-primary">
+          GamerShop
+        </Link>
         <Link href="/cart">
           <Image priority src={CartIcon} alt="cart" className="size-6" />
         </Link>

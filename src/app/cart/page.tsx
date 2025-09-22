@@ -62,18 +62,14 @@ const Cart = () => {
                   className="flex justify-between gap-1"
                   key={`${g.id}-details`}
                 >
-                  <span className="text-lg/lg-regular text-primary">
-                    {g.name}
-                  </span>
-                  <span className="text-lg/lg-regular text-primary">
-                    $ {g.price}
-                  </span>
+                  <span className="text-lg/lg-regular">{g.name}</span>
+                  <span className="text-lg/lg-regular">$ {g.price}</span>
                 </div>
               ))}
             </div>
             <div className="flex justify-between">
-              <span className="text-xs/xs-bold text-primary">Order total</span>
-              <span className="text-xs/xs-bold text-primary">$ {total}</span>
+              <span className="text-xs/xs-bold">Order total</span>
+              <span className="text-xs/xs-bold">$ {total}</span>
             </div>
           </div>
           <Button variant="filled">Checkout</Button>

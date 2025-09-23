@@ -26,16 +26,11 @@ const Dropdown = ({
       </label>
 
       <select
-        name="cars"
         id={id || randomId}
         className="sm:pl-4 py-4 text-xs/xs-regular border-r-[16px] border-[transparent]"
         {...rest}
       >
-        {deselectOption && (
-          <option value="" defaultChecked>
-            {deselectOption}
-          </option>
-        )}
+        {deselectOption && <option value="">{deselectOption}</option>}
         {options.map((option) => (
           <option value={option} key={option}>
             {option}

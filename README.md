@@ -1,7 +1,3 @@
-# Frontend Technical Test
+## Note to reviewers
 
-Welcome to the Frontend Technical Test! This test is designed to assess your knowledge and skills in frontend development.
-
-The detailed instructions and requirements for this test are defined in the [`CHALLENGE.md`](/CHALLENGE.md) file. Please read it carefully before you start.
-
-Good luck!
+I feel that implementing redux in a project this size could be a bit overkill, but since the role is for a senior position, I wanted to demostrate my knowlegde of this technology.
